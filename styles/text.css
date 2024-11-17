@@ -1,0 +1,29 @@
+.content__text-block .content__paragraph:not(:last-child) {
+    margin-bottom: 1.5em;
+
+}
+
+.content__text-block a {
+    color: inherit;
+}
+
+.content__text-block {
+    font-size: 18px;
+}
+
+.content__paragraph {
+    font-family: var(--main-font);
+}
+
+
+.content__text-block_type_first-lettered::first-letter {
+    color: var(--text-color);
+    background-color: var(--accent-color);
+    padding-left: 4px;
+    padding-right: 4px;
+    margin-right: 1px;
+    font-size: 30px;
+    display: inline-block;
+    font-family: var(--byk-font);
+    border: 1px solid var(--text-color-b);
+}

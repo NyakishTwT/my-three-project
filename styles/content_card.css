@@ -1,0 +1,41 @@
+.content__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 4 / 3;
+    margin-top: 7vw;
+    border: 1px solid var(--text-color);
+    margin: 91px 73px 0px 73px;
+
+}
+
+.content__card-title {
+    font-size: 60px;
+    width: -15%;
+}
+
+.content__card-subtitle {
+    font-family: var(--main-font);
+    font-size: 18px;
+}
+
+.theme_dark .colored-text::after {
+    background-image: url(./pattern.svg);
+}
+
+.colored-text::after {
+    content: '';
+    position: absolute;
+    background-color: var(--accent-color);
+    left: -1%;
+    top: 45%;
+    height: 0.45em;
+    z-index: -1;
+    width: 100%;
+}
+
+.colored-text {
+    left: 1vw;
+    position: relative;
+}

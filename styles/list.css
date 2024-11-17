@@ -1,0 +1,29 @@
+.content__list {
+    list-style: none;
+}
+
+.content__list li {
+    position: relative;
+    margin-bottom: 10px;
+    font-family: var(--main-font);
+    color: var(--text-color);
+}
+
+.content__list li:last-child {
+    margin-bottom: 0;
+}
+
+.content__list li::before {
+    content: "";
+    position: absolute;
+    background-image: url(./marker-light.svg);
+    left: -20px;
+    top: 20%;
+    width: 15px;
+    height: 15px;
+
+}
+
+.theme_dark .content__list li::before {
+    background-image: url(./marker-dark.svg)
+}

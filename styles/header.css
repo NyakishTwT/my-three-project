@@ -1,0 +1,73 @@
+.header {
+    padding-top: 10%;
+}
+
+.header__menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 72px;
+    border-top: 1px solid var(--text-color);
+    border-bottom: 1px solid var(--text-color);
+    color: var(--text-color);
+}
+
+.header__theme-toggler {
+    list-style: none;
+    display: flex;
+    font-family: var(--main-font);
+    padding: 0px;
+}
+
+.header__theme-button {
+    font-family: inherit;
+    font-size: 18px;
+    color: currentColor;
+    background: none;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.header__theme-button:hover {
+    text-decoration: underline;
+
+}
+
+.header__theme-button_is-active {
+    font-family: var(--byk-font);
+    position: relative;
+
+}
+
+.theme_dark .header__theme-button_is-active::after {
+    background-image: url(./pattern.svg);
+}
+
+.header__theme-button_is-active::after {
+    content: '';
+    position: absolute;
+    background-color: var(--accent-color);
+    left: -1%;
+    top: 55%;
+    height: 0.45em;
+    z-index: -1;
+    width: 100%;
+}
+
+button,
+a {
+    outline: none;
+}
+
+button:focus-visible,
+a:focus-visible {
+    outline: 2px solid currentColor;
+    outline-offset: 2px;
+    border-radius: 4px;
+}
+
+
+button:disabled {
+    pointer-events: none;
+}

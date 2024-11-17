@@ -1,0 +1,10 @@
+.content__blockquote {
+    width: 75%;
+    margin-bottom: 1.5em;
+    font-family: var(--qoute-font);
+    font-size: 18px;
+    color: var(--text-color);
+    line-height: 200%;
+    margin-left: 10vw;
+    margin-right: 15vw;
+}

@@ -1,0 +1,8 @@
+.footer__logo {
+    display: flex;
+    justify-content: center;
+    margin: 144px 0 0px;
+    padding: 36px 0;
+    color: var(--text-color);
+    border-top: 1px solid var(--text-color);
+}
